@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/modal.css";
+import "../css/Modal.css";
 
 
 export default function RoomModal({ show, onClose, room, imageIndex, nextImage, prevImage }) {

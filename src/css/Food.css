@@ -1,0 +1,50 @@
+
+  /* MENU */
+  
+  .menu-container {
+  
+    max-width: 800px;
+    margin: 80px auto;
+  
+  }
+  
+  .menu-title {
+  
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  
+  }
+  
+  .menu-item {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  
+  }
+  
+  .menu-item h4 {
+  
+    margin: 0;
+    font-size: 20px;
+  
+  }
+  
+  .menu-item p {
+  
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+  
+  }
+  
+  .menu-price {
+  
+    font-weight: bold;
+    font-size: 18px;
+  
+  }

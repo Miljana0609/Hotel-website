@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Restaurang City",
+      "imageurl": "https://plus.unsplash.com/premium_photo-1678897750441-b7fe348b14a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Välkommen till en stilfull restaurang där tradition möter moderna smaker och varje rätt tillagas med omsorg",
+      "menuCategories": [
+        {
+          "title": "Förrätter",
+          "items": [
+            { "name": "Bruschetta", "desc": "Tomat, basilika, olivolja på rostat bröd", "price": 75 },
+            { "name": "Toast Skagen", "desc": "Handskalade räkor, dillmajonnäs, citron och rostat bröd", "price": 175 },
+            { "name": "Caprese", "desc": "Mozzarella, tomat, basilika och olivolja", "price": 155 },
+            { "name": "Carpaccio", "desc": "Tunt skivad oxfilé med parmesan och ruccola", "price": 165 }
+          ]
+        },
+        {
+          "title": "Huvudrätter",
+          "items": [
+            { "name": "Köttbullar med potatis", "desc": "Serveras med lingonsylt och gräddsås", "price": 195 },
+            { "name": "Hamburgare", "desc": "100% nötfärs med sallad, ost, tomat och dressing", "price": 145 },
+            { "name": "Pizza Margherita", "desc": "Tomatsås, mozzarella, basilika", "price": 125 },
+            { "name": "Pizza Quattro Stagioni", "desc": "Skinka, svamp, kronärtskocka, oliver", "price": 135 },
+            { "name": "Grillad lax", "desc": "Med citronsås, potatis och säsongens grönsaker", "price": 295 },
+            { "name": "Pasta Carbonara", "desc": "Pancetta, parmesan, äggula och svartpeppar", "price": 245 },
+            { "name": "Lasagne", "desc": "Klassisk med köttfärs och bechamelsås", "price": 155 }
+          ]
+        },
+        {
+          "title": "Desserter",
+          "items": [
+            { "name": "Crème brûlée", "desc": "Klassisk vanilj med karamelliserat socker", "price": 125 },
+            { "name": "Chokladfondant", "desc": "Serveras med vaniljglass", "price": 145 },
+            { "name": "Glass & sorbet", "desc": "Tre kulor med bär", "price": 95 },
+            { "name": "Tiramisu", "desc": "Klassisk italiensk dessert med kaffe och mascarpone", "price": 125 },
+            { "name": "Pannacotta", "desc": "Vanilj med bärkompott", "price": 115 }
+          ]
+        },
+        {
+          "title": "Drycker",
+          "items": [
+            { "name": "Coca Cola", "desc": "Läsk", "price": 35 },
+            { "name": "Fanta", "desc": "Läsk", "price": 35 },
+            { "name": "Mineralvatten", "desc": "Naturligt kolsyrat vatten", "price": 30 },
+            { "name": "Rött vin", "desc": "Glas med 12 cl", "price": 85 },
+            { "name": "Vitt vin", "desc": "Glas med 12 cl", "price": 85 },
+            { "name": "Espresso", "desc": "Starkt och aromatiskt", "price": 40 },
+            { "name": "Kaffe", "desc": "Svart / med mjölk", "price": 35 },
+            { "name": "Limoncello", "desc": "Italiensk citronlikör", "price": 75 }
+          ]
+        }
+      ]
+    }
+]

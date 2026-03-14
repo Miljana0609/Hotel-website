@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Klassisk massage",
+      "price": 750,
+      "duration": "60 min",
+      "description": "Avslappnande helkroppsmassage med eteriska oljor."
+    },
+    {
+      "name": "Ansiktsbehandling",
+      "price": 650,
+      "duration": "50 min",
+      "description": "Rengör, exfolierar och återfuktar huden för en strålande hy."
+    },
+    {
+      "name": "Hot Stone Massage",
+      "price": 850,
+      "duration": "70 min",
+      "description": "Varma stenar kombinerade med djupgående massage."
+    },
+    {
+      "name": "Duo-behandling",
+      "forTwo": true,
+      "price": 1395,
+      "duration": "60 min",
+      "description": "En avkopplande upplevelse för två personer tillsammans. Välj mellan massage eller ansiktsbehandling."
+    },
+    {
+      "name": "Fot- och Benmassage",
+      "price": 500,
+      "duration": "40 min",
+      "description": "Fokuserar på fötter och ben för att lindra trötthet och öka cirkulationen."
+    },
+    {
+      "name": "Dagspaket",
+      "price": 1995,
+      "duration": "Heldag",
+      "description": "Tillgång till pool, bastu, en behandling och lunch."
+    }
+  ]

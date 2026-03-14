@@ -1,0 +1,143 @@
+section{
+    padding:80px 0;
+    }
+    
+    .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+    }
+    
+    .explore-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    }
+    
+    .explore-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    }
+    
+    .amenities-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    text-align:center;
+    font-weight:600;
+    }
+    
+    .preview-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+    }
+    
+    .preview-grid img{
+    width:100%;
+    border-radius:10px;
+    }
+    
+    .reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    }
+    
+    .review{
+    background:#f6f6f6;
+    padding:25px;
+    border-radius:10px;
+    }
+
+    .home-about img{
+        width:100%;
+        height:320px;
+        object-fit:cover;
+        border-radius:10px;
+      }
+      
+      .home-about h2{
+        margin-bottom:15px;
+      }
+      
+      .home-about p{
+        line-height:1.7;
+        color:#555;
+      }
+
+      .preview-grid img{
+        width:100%;
+        height:320px;
+        object-fit:cover;
+        border-radius:10px;
+      }
+      .image-slider{
+        position:relative;
+      }
+      
+      .image-slider img{
+        width:100%;
+        height:320px;
+        object-fit:cover;
+        border-radius:10px;
+      }
+      
+      .arrow{
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        background:rgba(0,0,0,0.6);
+        color:white;
+        border:none;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        cursor:pointer;
+      }
+      
+      .arrow.left{
+        left:10px;
+      }
+      
+      .arrow.right{
+        right:10px;
+      }
+      
+      .arrow:hover{
+        background:black;
+      }
+      .arrow{
+        background:rgba(0,0,0,0.5);
+        backdrop-filter: blur(4px);
+      }
+      section{
+        padding:90px 0;
+      }
+      
+      .section-light{
+        background:#f8f8f8;
+      }
+      
+      .section-white{
+        background:white;
+      }
+
+      section h2{
+        font-size:32px;
+        margin-bottom:25px;
+        position:relative;
+      }
+      
+      section h2::after{
+        content:"";
+        width:60px;
+        height:3px;
+        background:#b8955a;
+        display:block;
+        margin-top:10px;
+      }

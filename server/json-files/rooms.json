@@ -1,0 +1,101 @@
+[
+    {
+      "name": "Dubbelrum Standard",
+      "type": "standard",
+      "price": 1545,
+      "description": "Standard dubbelrum i en trivsam atmosfär med 180 cm bred kontinentalsäng från Hilding. Rummen varierar i storlek mellan 18 och 25 m2.",
+      "imageurls": [
+
+        "https://images.unsplash.com/photo-1631049035182-249067d7618e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1631049307485-2bfb23080676?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+       ],
+
+      "features": [
+        "Wifi",
+        "TV",
+        "Minibar",
+        "Hårtork",
+        "Roomservice"
+      ]
+    },
+    {
+      "name": "Dubbelrum Premium",
+      "type": "premium",
+      "price": 1795,
+      "description": "Ett rymligt premium dubbelrum med modern design och extra komfort.",
+      "imageurls": [
+        
+        "https://plus.unsplash.com/premium_photo-1670360414628-e26e589fed51?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1670360414882-4d4e261afb53?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3w0fHx8ZW58MHx8fHx8",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        
+      ],
+      "features": [
+        "Wifi",
+        "TV",
+        "Minibar",
+        "Badrock",
+        "Roomservice"
+      ]
+    },
+    {
+      "name": "Superior",
+      "type": "superior",
+      "price": 1995,
+      "description": "Superior rum med större yta och exklusiv inredning.",
+      "imageurls": [
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1630999295881-e00725e1de45?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1722650271196-74705d049c84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "features": [
+        "Wifi",
+        "TV",
+        "Minibar",
+        "Badrock",
+        "Steamer"
+      ]
+    },
+    {
+      "name": "Superior Balcony",
+      "type": "superior-balcony",
+      "price": 2045,
+      "description": "Superior Balcony med en rymlig balkong och sittgrupp.",
+      "imageurls": [
+          "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1630999295881-e00725e1de45?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1722650271196-74705d049c84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  
+       ],
+      "features": [
+        "Wifi",
+        "TV",
+        "Minibar",
+        "Balcony",
+        "Roomservice"
+      ]
+    },
+    {
+      "name": "Svit",
+      "type": "suite",
+      "price": 2545,
+      "description": "Lyxig svit med separat vardagsrum och premium faciliteter.",
+      "imageurls": [
+        "https://plus.unsplash.com/premium_photo-1671269705771-1ae9b3162118?q=80&w=1225&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1671269703855-afe22f97bdc7?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1671269705245-a893f7d43799?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8",
+       "https://images.unsplash.com/photo-1722650271196-74705d049c84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+       
+      ],
+      "features": [
+        "Wifi",
+        "TV",
+        "Minibar",
+        "Balcony",
+        "Badrock",
+        "Roomservice"
+      ]
+    }
+  ]

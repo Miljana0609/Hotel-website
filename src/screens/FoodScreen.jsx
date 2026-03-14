@@ -7,7 +7,7 @@ function FoodScreen() {
 
   useEffect(() => {
 
-    fetch("http://localhost:8000/api/restaurang")
+    fetch("https://hotel-website-kt5h.onrender.com/api/restaurang")
       .then(res => res.json())
       .then(data => setRestaurants(data));
 

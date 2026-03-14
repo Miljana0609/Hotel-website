@@ -20,7 +20,7 @@ function HomeScreen() {
     const fetchData = async () => {
       try {
         setloading(true);
-        const data = (await axios.get("http://localhost:8000/api/rooms/getallrooms")).data;
+        const data = (await axios.get("https://hotel-website-kt5h.onrender.com/api/rooms/getallrooms")).data;
         
         setrooms(data.rooms);
         setloading(false);

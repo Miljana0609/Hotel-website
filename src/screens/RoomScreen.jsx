@@ -37,7 +37,7 @@ const guests = adults + children;
     const fetchRooms = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("http://localhost:8000/api/rooms/getallrooms");
+        const res = await axios.get("https://citycomfort-api.onrender.com/api/rooms/getallrooms");
         setRooms(res.data.rooms);
         setLoading(false);
       } catch (err) {

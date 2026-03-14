@@ -18,7 +18,7 @@ function SpaScreen() {
 
         setLoading(true);
 
-        const res = await axios.get("http://localhost:8000/api/spa");
+        const res = await axios.get("https://citycomfort-api.onrender.com/api/spa");
 
         setTreatments(res.data.treatments);
 

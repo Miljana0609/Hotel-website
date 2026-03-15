@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function BookRoom() {
 
@@ -8,43 +9,44 @@ function BookRoom() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-
+  const navigate = useNavigate();
+  const [errors, setErrors] = useState({});
   const handleBooking = () => {
 
-if(!name){
-  alert("Ange ditt namn");
-  return;
-}
-
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if(!emailRegex.test(email)){
-  alert("Ange en giltig email");
-  return;
-}
-
-const phoneRegex = /^(\+46|0)[0-9]{9}$/;
-
-if(!phoneRegex.test(phone)){
-  alert("Ange ett giltigt mobilnummer");
-  return;
-}
-
-    const booking = {
-    roomId: roomid,
-    name: name,
-    email: email,
-    phone: phone,
-    date: new Date().toISOString()
+    let newErrors = {}
+    
+    if(!name){
+    newErrors.name = "Ange ditt namn"
     }
     
-    const existing = JSON.parse(localStorage.getItem("bookings")) || []
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
-    existing.push(booking)
+    if(!emailRegex.test(email)){
+    newErrors.email = "Ogiltig email"
+    }
     
-    localStorage.setItem("bookings", JSON.stringify(existing))
+    const phoneRegex = /^(\+46|0)[0-9]{9}$/;
     
-    alert("Bokningen är bekräftad!")
+    if(!phoneRegex.test(phone)){
+    newErrors.phone = "Ogiltigt mobilnummer"
+    }
+    
+    setErrors(newErrors)
+    
+    if(Object.keys(newErrors).length > 0){
+    return
+    }
+    
+    const booking = {
+    roomId: roomid,
+    name,
+    email,
+    phone
+    }
+    
+    navigate("/booking-confirmation", {
+    state: booking
+    })
   };
 
   return (
@@ -63,6 +65,7 @@ if(!phoneRegex.test(phone)){
             value={name}
             onChange={(e)=>setName(e.target.value)}
           />
+          {errors.name && <p className="form-error">{errors.name}</p>}
         </div>
 
         <div className="mb-3">
@@ -73,6 +76,7 @@ if(!phoneRegex.test(phone)){
             value={email}
             onChange={(e)=>setEmail(e.target.value)}
           />
+          {errors.email && <p className="form-error">{errors.email}</p>}
         </div>
 
         <div className="mb-3">
@@ -83,6 +87,7 @@ if(!phoneRegex.test(phone)){
             value={phone}
             onChange={(e)=>setPhone(e.target.value)}
           />
+          {errors.phone && <p className="form-error">{errors.phone}</p>}
         </div>
 
         <p>

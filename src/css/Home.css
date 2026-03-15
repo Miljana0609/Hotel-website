@@ -141,3 +141,35 @@ section{
         display:block;
         margin-top:10px;
       }
+      @media (max-width:768px){
+
+        .about-grid{
+        grid-template-columns:1fr;
+        }
+        
+        .preview-grid{
+        grid-template-columns:1fr;
+        }
+        
+        .explore-grid{
+        grid-template-columns:1fr;
+        }
+        
+        .amenities-grid{
+        grid-template-columns:1fr;
+        }
+        
+        .reviews-grid{
+        grid-template-columns:1fr;
+        }
+        
+        }
+        a{
+            text-decoration:none;
+            color:inherit;
+            }
+            
+            a:hover{
+            text-decoration:none;
+            color: burlywood;
+            }

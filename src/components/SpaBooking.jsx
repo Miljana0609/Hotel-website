@@ -13,11 +13,34 @@ const [persons, setPersons] = useState(1);
 
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
+const [phone, setPhone] = useState("");
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneRegex = /^(\+46|0)[0-9]{9}$/;
 
 const handleBooking = () => {
 
 if(!date || !time){
   alert("Välj datum och tid");
+  return;
+}
+
+if(!name){
+  alert("Ange ditt namn");
+  return;
+}
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!emailRegex.test(email)){
+  alert("Ange en giltig email");
+  return;
+}
+
+const phoneRegex = /^(\+46|0)[0-9]{9}$/;
+
+if(!phoneRegex.test(phone)){
+  alert("Ange ett giltigt mobilnummer");
   return;
 }
 
@@ -89,6 +112,19 @@ onChange={(e)=>setPersons(e.target.value)}
 className="form-control"
 value={name}
 onChange={(e)=>setName(e.target.value)}
+/>
+
+</div>
+<div className="mb-3">
+
+<label>Mobilnummer</label>
+
+<input
+type="tel"
+className="form-control"
+placeholder="0701234567"
+value={phone}
+onChange={(e)=>setPhone(e.target.value)}
 />
 
 </div>

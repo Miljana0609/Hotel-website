@@ -8,7 +8,27 @@ function BookRoom() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+
   const handleBooking = () => {
+
+if(!name){
+  alert("Ange ditt namn");
+  return;
+}
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!emailRegex.test(email)){
+  alert("Ange en giltig email");
+  return;
+}
+
+const phoneRegex = /^(\+46|0)[0-9]{9}$/;
+
+if(!phoneRegex.test(phone)){
+  alert("Ange ett giltigt mobilnummer");
+  return;
+}
 
     const booking = {
     roomId: roomid,

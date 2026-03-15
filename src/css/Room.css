@@ -55,8 +55,13 @@
     font-weight: bold;
   }
   
-  .room-info button + button {
-    margin-left: 10px; 
+  .room-buttons{
+    display:flex;
+    gap:10px;
+  }
+  
+  .room-buttons button{
+    flex:1;
   }
   
   .smallimg {

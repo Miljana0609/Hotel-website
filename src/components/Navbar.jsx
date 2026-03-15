@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 
 
 function Navbar() {
+
+  const closeMenu = () => {
+    const navbar = document.getElementById("navbarNav");
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  };
+
   return (
 
     <nav className="navbar navbar-expand-lg navbar-custom">
@@ -38,25 +46,25 @@ function Navbar() {
           <ul className="navbar-nav ms-auto">
 
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" onClick={closeMenu}>
                 Hem
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/rooms">
+              <Link className="nav-link" to="/rooms" onClick={closeMenu}>
                 Rum
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/food">
+              <Link className="nav-link" to="/food" onClick={closeMenu}>
                 Restaurang
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/spa">
+              <Link className="nav-link" to="/spa" onClick={closeMenu}>
                 Spa
               </Link>
             </li>

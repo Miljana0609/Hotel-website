@@ -37,12 +37,14 @@ const params = new URLSearchParams(location.search);
           </span>
         </p>
 
+      <div className="room-buttons">
         <button className="btn btn-dark" onClick={onShow}>
           Visa mer
         </button>
         <button className="btn btn-success" onClick={bookRoom}>
           Boka rum
         </button>
+        </div>
       </div>
     </div>
   );

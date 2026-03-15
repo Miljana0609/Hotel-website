@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -9,7 +10,9 @@ const { id } = useParams();
 
 const [date, setDate] = useState(null);
 const [time, setTime] = useState("");
+const navigate = useNavigate();
 const [persons, setPersons] = useState(1);
+const [errors, setErrors] = useState({});
 
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
@@ -20,32 +23,44 @@ const phoneRegex = /^(\+46|0)[0-9]{9}$/;
 
 const handleBooking = () => {
 
-if(!date || !time){
-  alert("Välj datum och tid");
-  return;
-}
-
-if(!name){
-  alert("Ange ditt namn");
-  return;
-}
-
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if(!emailRegex.test(email)){
-  alert("Ange en giltig email");
-  return;
-}
-
-const phoneRegex = /^(\+46|0)[0-9]{9}$/;
-
-if(!phoneRegex.test(phone)){
-  alert("Ange ett giltigt mobilnummer");
-  return;
-}
-
-alert("Spa-bokning skickad!");
-
+  let newErrors = {}
+  
+  if(!date){
+  newErrors.date = "Välj datum"
+  }
+  
+  if(!time){
+  newErrors.time = "Välj tid"
+  }
+  
+  if(!name){
+  newErrors.name = "Ange ditt namn"
+  }
+  
+  if(!emailRegex.test(email)){
+  newErrors.email = "Ogiltig email"
+  }
+  
+  if(!phoneRegex.test(phone)){
+  newErrors.phone = "Ogiltigt mobilnummer"
+  }
+  
+  setErrors(newErrors)
+  
+  if(Object.keys(newErrors).length > 0){
+  return
+  }
+  
+  navigate("/booking-confirmation", {
+  state:{
+  name,
+  email,
+  phone,
+  date,
+  time,
+  persons
+  }
+  })
 };
 
 return (
@@ -113,6 +128,7 @@ className="form-control"
 value={name}
 onChange={(e)=>setName(e.target.value)}
 />
+{errors.name && <p className="form-error">{errors.name}</p>}
 
 </div>
 <div className="mb-3">
@@ -122,10 +138,11 @@ onChange={(e)=>setName(e.target.value)}
 <input
 type="tel"
 className="form-control"
-placeholder="0701234567"
+placeholder="070 123 45 67"
 value={phone}
 onChange={(e)=>setPhone(e.target.value)}
 />
+{errors.phone && <p className="form-error">{errors.phone}</p>}
 
 </div>
 
@@ -138,6 +155,7 @@ className="form-control"
 value={email}
 onChange={(e)=>setEmail(e.target.value)}
 />
+{errors.email && <p className="form-error">{errors.email}</p>}
 
 </div>
 

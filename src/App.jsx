@@ -22,6 +22,7 @@ import Contact from './pages/Contact'
 import Policy from './pages/Policy'
 import Scroll from './components/Scroll'
 import SpaBooking from './components/SpaBooking'
+import BookingConfirmation from './components/BookingConfirmation'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path='/careers' element={<Careers />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/policy' element={<Policy />} />
+        <Route path="/booking-confirmation" element={<BookingConfirmation />} />
 
       </Routes>
    

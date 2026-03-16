@@ -18,7 +18,7 @@ function SpaScreen() {
 
         setLoading(true);
 
-        const res = await axios.get("https://hotel-website-kt5h.onrender.com/api/spa");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/spa`);
 
         setTreatments(res.data.treatments);
 

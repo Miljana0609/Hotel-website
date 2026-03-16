@@ -37,7 +37,7 @@ const guests = adults + children;
     const fetchRooms = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("https://hotel-website-kt5h.onrender.com/api/rooms/getallrooms");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/rooms/getallrooms`);
         setRooms(res.data.rooms);
         setLoading(false);
       } catch (err) {

@@ -6,6 +6,11 @@ import './css/Spa.css'
 import './css/Modal.css'
 import './css/Pages.css'
 import './css/Home.css'
+import './css/Booking.css'
+import './css/Footer.css'
+import './css/Navbar.css'
+import './css/Hero.css'
+
 
 
 import Navbar from './components/Navbar'

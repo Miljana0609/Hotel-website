@@ -1,0 +1,33 @@
+
+.booking-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #f5f5f5;
+    padding: 40px;
+  
+  }
+  @media (max-width:768px){
+  
+    .booking-container{
+      flex-direction:column;
+      align-items:center;
+    }
+  
+  }
+
+.date-box {
+
+    background: white;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }

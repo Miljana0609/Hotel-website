@@ -49,6 +49,21 @@
     font-size: 18px;
   
   }
+
+  .food-card {
+
+    margin-bottom:60px;
+  
+  }
+  
+  .food-card img{
+  
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+  
+  }
   @media (max-width:768px){
 
     .menu-item{

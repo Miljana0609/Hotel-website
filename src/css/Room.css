@@ -1,6 +1,4 @@
 
-/* ROOM SECTION */
-
 .rooms-section {
     margin-top: 60px;
   }
@@ -10,17 +8,11 @@
     margin-bottom: 40px;
   }
   
-  
-  /* ROOM GRID */
-  
   .rooms-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
   }
-  
-  
-  /* ROOM CARD */
   
   .room-card {
     position: relative;

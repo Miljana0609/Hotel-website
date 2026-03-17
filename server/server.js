@@ -17,7 +17,7 @@ app.use("/api/restaurang", restaurangRoute);
 app.use("/api/spa", spaRoute);
 
 // Start server
-const port = 8000;
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });

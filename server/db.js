@@ -1,7 +1,8 @@
 
+require("dotenv").config();
 const mongoose = require("mongoose");
 
-const mongoURL = "mongodb+srv://mz_database_user:hotelnorellidb@cluster0.qtjhrnh.mongodb.net/norelli_db?retryWrites=true&w=majority";
+const mongoURL = process.env.MONGO_URL;
 
 
 mongoose.connect(mongoURL)

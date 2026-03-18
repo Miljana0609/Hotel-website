@@ -12,7 +12,7 @@ return(
 
 <div className="explore-grid">
 
-<Link to="/room" className="explore-card">
+<Link to="/rooms" className="explore-card">
 <img src="https://images.unsplash.com/photo-1631049035182-249067d7618e"/>
 <h3>Rum</h3>
 </Link>

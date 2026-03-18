@@ -7,7 +7,7 @@ function FoodScreen() {
 
   useEffect(() => {
 
-    fetch("https://hotel-website-kt5h.onrender.com/api/restaurang")
+    fetch(`${import.meta.env.VITE_API_URL}/api/restaurang`)
       .then(res => res.json())
       .then(data => setRestaurants(data));
 

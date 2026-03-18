@@ -20,7 +20,7 @@ function HomeScreen() {
     const fetchData = async () => {
       try {
         setloading(true);
-        const data = (await axios.get(`${import.meta.env.VITE_API_URL}/rooms/getallrooms`)).data;        
+        const data = (await axios.get(`${import.meta.env.VITE_API_URL}/api/rooms/getallrooms`)).data;        
         setrooms(data.rooms);
         setloading(false);
       } catch (error) {

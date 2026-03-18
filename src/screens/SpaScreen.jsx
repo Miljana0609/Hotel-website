@@ -18,7 +18,7 @@ function SpaScreen() {
 
         setLoading(true);
 
-        const res = await axios.get(`${import.meta.env.VITE_API_URL}/spa`);
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/spa`);
 
         setTreatments(res.data.treatments);
 

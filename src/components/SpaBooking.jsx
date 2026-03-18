@@ -50,17 +50,26 @@ const handleBooking = () => {
   if(Object.keys(newErrors).length > 0){
   return
   }
-  
+  const spaBooking = {
+    treatmentId: id,
+    name,
+    email,
+    phone,
+    date: date.toLocaleDateString(), 
+    time,
+    persons,
+    type: "spa" 
+  };
+
+  const existingSpaBookings = JSON.parse(localStorage.getItem("spa_bookings")) || [];
+
+  existingSpaBookings.push(spaBooking);
+
+  localStorage.setItem("spa_bookings", JSON.stringify(existingSpaBookings));
+
   navigate("/booking-confirmation", {
-  state:{
-  name,
-  email,
-  phone,
-  date,
-  time,
-  persons
-  }
-  })
+    state: spaBooking
+  });
 };
 
 return (

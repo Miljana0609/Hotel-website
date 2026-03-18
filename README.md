@@ -1,16 +1,46 @@
-# React + Vite
+# Hotel Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fullstack hotel booking platform built with focus on learning modern frontend frameworks and understanding how frontend and backend work together.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+https://steady-crepe-080158.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
 
-## React Compiler
+**Frontend**
+- React (Vite)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Backend**
+- Node.js
+- Express
 
-## Expanding the ESLint configuration
+**Database**
+- MongoDB Atlas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Deployment**
+- Netlify (Frontend)
+- Render (Backend)
+
+## ✨ Features
+
+- Browse hotel rooms, spa treatments, and restaurant menu
+- Data fetched dynamically from a backend API
+- Booking flow using LocalStorage (project requirement)
+- Responsive UI
+
+## 🧠 What I Learned
+
+- Building and structuring a fullstack application
+- Creating and consuming REST APIs
+- Working with MongoDB and NoSQL data
+- Managing environment variables and CORS
+- Handling browser storage with LocalStorage
+
+## 🔄 Future Improvements
+
+- Store bookings in the database instead of LocalStorage
+- Add authentication/login
+- Improve search and filtering
+- Enhance booking flow
+
+- 

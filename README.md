@@ -42,5 +42,3 @@ https://steady-crepe-080158.netlify.app/
 - Add authentication/login
 - Improve search and filtering
 - Enhance booking flow
-
-- 
